@@ -5,9 +5,9 @@ form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(evt) {
   evt.preventDefault();
-  delay = Number(form.delay.value);
-  step = Number(form.step.value);
-  amount = Number(form.amount.value);
+  const delay = Number(form.delay.value);
+  const step = Number(form.step.value);
+  const amount = Number(form.amount.value);
   playPromise(delay, step, amount);
   form.reset();
 }
